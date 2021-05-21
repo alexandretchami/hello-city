@@ -1,14 +1,16 @@
 {% extends "base.html.twig" %}
 
+{% block title 'Hello City!' %}
+
 {% block body %}
-    <h1>hello from Cameroun!</h1>
+    <h1>hello from Cameroon!</h1>
 
     <p>It's current {{ 'now'|date('h:i A') }}.</p>
 
     <footer>
         <p>
             &copy; Copyright {{ 'now'|date('Y') }} 
-            &middot; <a href="#">About Us</a>
+            &middot; <a href="{{ path('app_about')}}">About Us</a>
         </p>
     </footer>
 {% endblock %}
