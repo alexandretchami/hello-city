@@ -3,6 +3,17 @@
 {% block title 'About Us | ' ~ parent() %}
 
 {% block body %}
-    
+
+     <img src="{{ asset('images/kamto.png') }}" alt="Cameroon Flag" class="my-12 rounded-full shadow-md" width="20%">
+
+    <h1 class="text-gray-700">Built with <span class="text-pink-500">&hearts;</span> by Alexandre TCHAMI</h1>
+
+    <p class="mt-5">
+        <a href="{{ path('app_home')}}" class="text-indigo-500 hover:text-indigo-600 underline">
+
+            Revenir à la page d'acceuil
+
+        </a>
+    </p>
 {% endblock %}
     

@@ -3,14 +3,11 @@
 {% block title 'Hello City!' %}
 
 {% block body %}
-    <h1>hello from Cameroon!</h1>
 
-    <p>It's current {{ 'now'|date('h:i A') }}.</p>
+    <img src="{{ asset('images/cameroon-flag.png') }}" alt="Cameroon Flag" class="h32 mt-12 rounded shadow-md" width="20%">
+    
+    <h1 class="mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600">hello from Cameroon!</h1>
 
-    <footer>
-        <p>
-            &copy; Copyright {{ 'now'|date('Y') }} 
-            &middot; <a href="{{ path('app_about')}}">About Us</a>
-        </p>
-    </footer>
+    <p class="text-lg text-gray-800">It's current {{ 'now'|date('h:i A') }}.</p>
+
 {% endblock %}
